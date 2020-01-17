@@ -1,0 +1,19 @@
+{
+  "name": "wemob3",
+  "version": "1.0.0",
+  "description": "WEMOB 3",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Thommes Noël",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Noitha/wemob.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^2.0.4"
+  }
+}

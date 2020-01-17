@@ -1,0 +1,21 @@
+doctype html
+html(lang='en')  
+head  
+title= 'WEMOB3'  
+meta( name='viewport', content='width=device-width, initial-scale=1' )
+body!= body  
+
+
+//Display players
+h1= 'Players'
+ul
+  each player in players
+    li= player
+
+
+//Display enemies
+h1= 'Enemies'
+ul
+  each enemy in enemies
+    
+    li: a(href='/showEnemy/' + enemy.name)= enemy.name

@@ -17,7 +17,7 @@ module.exports.RegisterUser = function(req, res)
 
 module.exports.LoginUser = function(req, res)
 {
-    var data = JSON.parse(req.body.loginData);
+    var data = (req.body);
 
     Player.find({name : data.name}, function(err, users)
     {

@@ -8,7 +8,7 @@ module.exports.AddEnemy = function(req, res)
     const data = req.body;
     const newEnemy = new Enemy(data);
 
-    newEnemy.save().catch(error => console.log(error));
+    newEnemy.save();
 
     res.send(newEnemy);
 };

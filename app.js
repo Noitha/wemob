@@ -68,7 +68,6 @@ app.get('/showEnemy/:name', async function (req, res) {
 
     res.render('enemyTemplate.pug',
         {
-            enemyName: enemyName,
             enemyData: enemyData
         });
 });

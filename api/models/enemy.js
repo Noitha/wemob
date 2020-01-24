@@ -6,29 +6,34 @@ const Schema = mongoose.Schema;
 var enemySchema = new Schema
 (
     {
-        name: 
-        {
-            type: String,
-            required: true
-        },
-
-        damage:
-        {
-            type: String,
-            required: true
-        },
-
-        position:
-        {
-            x :{
-                type : Number,
+        name:
+            {
+                type: String,
                 required: true
             },
-            y :{
-                type: Number,
+
+        damage:
+            {
+                type: String,
+                required: true
+            },
+
+        position:
+            {
+                x :{
+                    type : Number,
+                    required: true
+                },
+                y :{
+                    type: Number,
+                    required: true
+                }
+            },
+        imageURL:
+            {
+                type: String,
                 required: true
             }
-        }
     }
 );
 

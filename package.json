@@ -1,0 +1,25 @@
+{
+  "name": "wemob3",
+  "version": "1.0.0",
+  "description": "WEMOB 3",
+  "main": "app.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Thommes Noël",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Noitha/wemob.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.8.7",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

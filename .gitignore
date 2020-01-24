@@ -1,6 +1,6 @@
 logs
 *.log
 npm-debug.log*
-node-modules
 .npm-debug
 .DS_Store
+node_modules

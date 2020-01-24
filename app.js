@@ -9,6 +9,7 @@ const dotenv = require('dotenv').config();
 
 const app = express();
 app.set('view engine', 'pug');
+app.use(express.static('.'));
 
 //Models
 const Player = require('./api/models/player');
@@ -60,7 +61,8 @@ app.get('/showEnemy/:name', async function (req, res) {
 
     await Enemy.find({ name: enemyName }, function (err, enemies) {
         if (enemies.length > 0) {
-            enemyData = { name: enemies[0].name, damage: enemies[0].damage, position: enemies[0].position };
+            const data = enemies[0];
+            enemyData = { name: data.name, damage: data.damage, position: data.position, imageURL: data.imageURL };
         }
     });
 

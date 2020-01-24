@@ -1,11 +1,25 @@
 doctype html
-html(lang='en')  
-head  
-title= 'WEMOB3'  
-meta( name='viewport', content='width=device-width, initial-scale=1' )
-body!= body  
+html(lang='en')
+head
+title= 'WEMOB3'
+meta(name='viewport', content='width=device-width, initial-scale=1')
+link(rel='stylesheet', href='/public/style.css', type='text/css')
+body
 
-h1= enemyName
+<div id="enemyDisplay">
+h1= enemyData.name
+img(src=enemyData.imageURL)
 
-h2= "Damage: " + enemyData.damage
-h2= "Position: " + enemyData.position
+<div id="enemyOverview">
+h1= "Overview"
+
+table
+    <tr> 
+        <td>Damage</td>
+        td= enemyData.damage
+    </tr>
+    <tr>
+        <td>Position</td>
+        td= enemyData.position
+    </tr>
+</div>

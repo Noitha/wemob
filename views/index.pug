@@ -2,20 +2,29 @@ doctype html
 html(lang='en')  
 head  
 title= 'WEMOB3'  
-meta( name='viewport', content='width=device-width, initial-scale=1' )
-body!= body  
+meta(name='viewport', content='width=device-width, initial-scale=1')
+link(rel='stylesheet', href='/public/style.css', type='text/css')
+body 
 
+<div id="Home">
 
+  
 //Display players
 h1= 'Players'
-ul
+<table>
   each player in players
-    li= player
-
+    <tr>
+    td= player
+    </tr>
+  
+</table>
 
 //Display enemies
 h1= 'Enemies'
-ul
-  each enemy in enemies
-    
-    li: a(href='/showEnemy/' + enemy.name)= enemy.name
+
+<table>
+each enemy in enemies
+  <tr>
+  td: a(href='/showEnemy/' + enemy.name)= enemy.name
+  </tr>
+</table>

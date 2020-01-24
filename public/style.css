@@ -1,0 +1,96 @@
+﻿*{
+    margin:0;
+    padding:0;
+    border:0;
+}
+body{
+    background: rgba(7,5,22,1);
+}
+
+
+
+#Home{
+    min-width: 500px;
+    max-width: 66%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 2px solid white;
+}
+
+#Home h1{
+    color: white;
+    text-align: center;
+    font-family: KoreanFont,georgia,serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+
+
+
+#enemyDisplay{
+    margin: 50px auto 0 auto;
+    padding: 15px;
+    box-shadow: 0 0 30px 10px rgba(78,29,78,1);
+    border-radius: 15px;
+    min-width: 350px;
+    max-width: 66%;
+    background: rgba(35,36,37,1);
+}
+
+#enemyDisplay h1{
+    color: white;
+    text-align: center;
+    font-family: KoreanFont,georgia,serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 42px;
+    margin: 15px 0;
+}
+
+#enemyDisplay img{
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+#enemyOverview h1{
+    color: rgba(217,38,38,1);
+}
+
+table{
+    margin: 0 auto;
+    max-width: 500px;
+    border: 2px solid white;
+}
+
+tr{
+   border: 1px solid white;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 5px 8px;
+    text-align: center;
+    color: white;
+    font-size: 32px;
+    border: 2px solid white;
+    border-collapse: collapse;
+}
+
+li{
+    list-style-type: none;
+}
+td a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: rgba(217,38,38,1);  
+}
+
+td a, td a:visited, td a:hover, td a:active{
+    text-decoration: none;
+}
